@@ -1703,14 +1703,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 50,
           "layer": "",
           "name": "Sword",
           "persistentUuid": "58eb53d7-a092-4d36-8a2e-9d78fab24834",
           "width": 50,
           "x": 256,
-          "y": -80,
+          "y": -82,
           "zOrder": 64,
           "numberProperties": [],
           "stringProperties": [],
@@ -1784,12 +1784,12 @@
               "JumpButton": "A"
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "ignoreDefaultControls": true,
               "jumpSpeed": 800,
               "jumpSustainTime": 0.5,
               "maxFallingSpeed": 600,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGoDownFromJumpthru": true,
               "acceleration": 1125,
               "deceleration": 1125,
@@ -6084,7 +6084,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "9ac194a100fb1f24d54c0f218f3c38836f6a2766577309235412efc381676af6",
           "name": "Sword",
           "type": "Sprite",
@@ -6127,6 +6127,10 @@
                         [
                           {
                             "x": 0,
+                            "y": 12
+                          },
+                          {
+                            "x": 12,
                             "y": 0
                           },
                           {
@@ -6135,6 +6139,10 @@
                           },
                           {
                             "x": 16,
+                            "y": 4
+                          },
+                          {
+                            "x": 4,
                             "y": 16
                           },
                           {
@@ -6285,6 +6293,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6652,6 +6661,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -6679,6 +6689,7 @@
                       "comment": "Facing Right"
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -6829,6 +6840,7 @@
                       "comment": "Facing Left"
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -7085,7 +7097,7 @@
                         "Sword",
                         "\"duration\"",
                         ">",
-                        "0.4"
+                        "0.3"
                       ]
                     }
                   ],
@@ -7096,6 +7108,163 @@
                       },
                       "parameters": [
                         "Sword"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Sword collision with enemy"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Enemy::MonsterEnemy::IsOnFire"
+                          },
+                          "parameters": [
+                            "Monster",
+                            "MonsterEnemy",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "Monster",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Sword"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Monster",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "MonsterParticles",
+                        "MonsterParticles",
+                        "Monster.CenterX()",
+                        "Monster.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Score",
+                        "+",
+                        "50"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Enemy::IsFlyDead"
+                          },
+                          "parameters": [
+                            "",
+                            "Fly",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "Fly",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Sword"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Enemy::TriggerFlyDeath"
+                      },
+                      "parameters": [
+                        "",
+                        "Fly",
+                        "RectangleMovement",
+                        "ShakeObject_PositionAngle",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Score",
+                        "+",
+                        "50"
                       ]
                     }
                   ]
@@ -7672,7 +7841,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Fly enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7866,7 +8034,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Monster enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
