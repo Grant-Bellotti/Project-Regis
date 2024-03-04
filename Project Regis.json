@@ -905,11 +905,27 @@
         "name": "assets\\gui\\Thumbstick Boundary_Dark160.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tile 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tile 1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Tiles/8cfe08fe2e8aed6067fdcdaa6d2a9caffe5926fcec066493794739bd6377f38d_Tile 1.png",
+          "name": "Tile 1.png"
+        }
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "objectsGroups": [],
   "variables": [
     {
@@ -939,7 +955,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6146148664417966,
+        "zoomFactor": 0.6567637531652002,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1677,7 +1693,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -1685,6 +1700,12 @@
               "name": "dead",
               "type": "boolean",
               "value": false
+            },
+            {
+              "folded": true,
+              "name": "speed",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -1728,19 +1749,19 @@
               "JumpButton": "A"
             },
             {
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 800,
+              "jumpSustainTime": 0.5,
+              "maxFallingSpeed": 600,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGoDownFromJumpthru": true,
               "acceleration": 1125,
               "deceleration": 1125,
               "gravity": 1000,
-              "jumpSpeed": 650,
-              "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 300,
-              "maxFallingSpeed": 500,
               "maxSpeed": 200,
               "canGrabPlatforms": false,
-              "ignoreDefaultControls": false,
               "slopeMaxAngle": 60,
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
@@ -1749,10 +1770,10 @@
             {
               "name": "SmoothCamera",
               "type": "SmoothCamera::SmoothCamera",
-              "LeftwardSpeed": 0.9,
-              "RightwardSpeed": 0.9,
-              "UpwardSpeed": 0.7,
-              "DownwardSpeed": 0.7,
+              "LeftwardSpeed": 1,
+              "RightwardSpeed": 1,
+              "UpwardSpeed": 0.9,
+              "DownwardSpeed": 0.9,
               "FollowOnX": true,
               "FollowOnY": true,
               "FollowFreeAreaLeft": 0,
@@ -3201,7 +3222,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform1",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3270,7 +3290,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform2",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3364,7 +3383,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform3",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3433,7 +3451,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform4",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3506,7 +3523,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Portal",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3582,7 +3598,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Checkpoint",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -3774,7 +3789,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Ladder",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -3824,7 +3838,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Monster",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -4305,7 +4318,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Fly",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -5006,7 +5018,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Coin",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5081,7 +5092,6 @@
           "rendererParam1": 10,
           "rendererParam2": 1,
           "rendererType": "Point",
-          "tags": "",
           "tank": 15,
           "textureParticleName": "",
           "type": "ParticleSystem::ParticleEmitter",
@@ -5127,7 +5137,6 @@
           "rendererParam1": 5,
           "rendererParam2": 1,
           "rendererType": "Point",
-          "tags": "",
           "tank": 20,
           "textureParticleName": "",
           "type": "ParticleSystem::ParticleEmitter",
@@ -5173,7 +5182,6 @@
           "rendererParam1": 3.5,
           "rendererParam2": 1,
           "rendererType": "Point",
-          "tags": "",
           "tank": -1,
           "textureParticleName": "",
           "type": "ParticleSystem::ParticleEmitter",
@@ -5219,7 +5227,6 @@
           "rendererParam1": 6,
           "rendererParam2": 1,
           "rendererType": "Point",
-          "tags": "",
           "tank": 5,
           "textureParticleName": "",
           "type": "ParticleSystem::ParticleEmitter",
@@ -5232,7 +5239,6 @@
           "assetStoreId": "",
           "height": 78,
           "name": "Clouds",
-          "tags": "",
           "texture": "assets\\Clouds.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 960,
@@ -5246,7 +5252,6 @@
           "italic": false,
           "name": "ScoreText",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -5260,13 +5265,32 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Score: 0",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "",
+            "characterSize": 40,
+            "color": "255;255;255"
           }
         },
         {
           "assetStoreId": "",
           "height": 622,
           "name": "BackgroundPlants",
-          "tags": "",
           "texture": "assets\\tiled_Background.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 1426,
@@ -5278,7 +5302,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LeftBoundary",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5328,7 +5351,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RightBoundary",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5378,7 +5400,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "TopBoundary",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5420,7 +5441,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BottomBoundary",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5462,7 +5482,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BoundaryJumpThrough",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5512,7 +5531,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Moon",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5554,7 +5572,6 @@
           "assetStoreId": "",
           "height": 32,
           "name": "EndScreenBackground",
-          "tags": "",
           "texture": "assets/gui/black.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
@@ -5568,7 +5585,6 @@
           "italic": false,
           "name": "EndScreenHeader",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -5582,6 +5598,26 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congratulations!",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "center",
+            "characterSize": 60,
+            "color": "255;255;255"
           }
         },
         {
@@ -5590,7 +5626,6 @@
           "italic": false,
           "name": "EndScreenSubHeader",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -5604,6 +5639,26 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "You got 100 points!",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "255;255;255"
           }
         },
         {
@@ -5612,7 +5667,6 @@
           "italic": true,
           "name": "EndScreenBestText",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -5626,6 +5680,26 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "You got the highest number of points!",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "255;255;255"
           }
         },
         {
@@ -5634,7 +5708,6 @@
           "italic": true,
           "name": "EndScreenChallengeText",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -5648,6 +5721,26 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Can you get 950 points?",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "255;255;255"
           }
         },
         {
@@ -5656,7 +5749,6 @@
           "italic": true,
           "name": "EndScreenRetryText",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -5675,12 +5767,31 @@
             "b": 255,
             "g": 255,
             "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Retry",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "",
+            "characterSize": 65,
+            "color": "255;255;255"
           }
         },
         {
           "assetStoreId": "a48315b9a9c655af87118d7bb8f6be03b4dbb14e066387849b2d2d4c3600573c",
           "name": "RetryButton",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -5727,6 +5838,26 @@
                 "b": 255,
                 "g": 255,
                 "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Retry",
+                "font": "CantoraOne-Regular.ttf",
+                "textAlignment": "center",
+                "characterSize": 40,
+                "color": "255;255;255"
               }
             },
             "Pressed": {
@@ -5744,7 +5875,6 @@
         {
           "assetStoreId": "",
           "name": "Joystick",
-          "tags": "",
           "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
           "variables": [],
           "effects": [],
@@ -5831,7 +5961,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "JumpButton",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -5918,8 +6047,126 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Player"
+          },
+          {
+            "objectName": "Platform1"
+          },
+          {
+            "objectName": "Platform2"
+          },
+          {
+            "objectName": "Platform3"
+          },
+          {
+            "objectName": "Platform4"
+          },
+          {
+            "objectName": "Portal"
+          },
+          {
+            "objectName": "Checkpoint"
+          },
+          {
+            "objectName": "Ladder"
+          },
+          {
+            "objectName": "Monster"
+          },
+          {
+            "objectName": "Fly"
+          },
+          {
+            "objectName": "Coin"
+          },
+          {
+            "objectName": "MonsterParticles"
+          },
+          {
+            "objectName": "CoinParticles"
+          },
+          {
+            "objectName": "DoorParticles"
+          },
+          {
+            "objectName": "DustParticle"
+          },
+          {
+            "objectName": "Clouds"
+          },
+          {
+            "objectName": "ScoreText"
+          },
+          {
+            "objectName": "BackgroundPlants"
+          },
+          {
+            "objectName": "LeftBoundary"
+          },
+          {
+            "objectName": "RightBoundary"
+          },
+          {
+            "objectName": "TopBoundary"
+          },
+          {
+            "objectName": "BottomBoundary"
+          },
+          {
+            "objectName": "BoundaryJumpThrough"
+          },
+          {
+            "objectName": "Moon"
+          },
+          {
+            "objectName": "EndScreenBackground"
+          },
+          {
+            "objectName": "EndScreenHeader"
+          },
+          {
+            "objectName": "EndScreenSubHeader"
+          },
+          {
+            "objectName": "EndScreenBestText"
+          },
+          {
+            "objectName": "EndScreenChallengeText"
+          },
+          {
+            "objectName": "EndScreenRetryText"
+          },
+          {
+            "objectName": "RetryButton"
+          },
+          {
+            "objectName": "Joystick"
+          },
+          {
+            "objectName": "JumpButton"
+          },
+          {
+            "objectName": "NewTiledSprite"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -5943,6 +6190,287 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "d"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "a"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Space"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Jump\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Ladder\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "w"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Up"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Ladder\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Up\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "s"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Down"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Down\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "LShift"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "=",
+                    "500"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "LShift"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "=",
+                    "200"
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5959,6 +6487,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Mobile Touchscreen Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6089,6 +6618,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Sound and visual effects",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6204,6 +6734,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Use checkpoints to save progress",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7559,6 +8090,7 @@
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
@@ -7575,6 +8107,7 @@
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
@@ -7618,6 +8151,7 @@
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
@@ -7634,6 +8168,7 @@
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
@@ -7668,10 +8203,6 @@
         {
           "name": "MultitouchButton",
           "type": "MultitouchJoystick::MultitouchButton"
-        },
-        {
-          "name": "Object3D",
-          "type": "Scene3D::Base3DBehavior"
         },
         {
           "name": "Opacity",
@@ -7716,6 +8247,10 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "Tween",
@@ -10234,7 +10769,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "PressedLabelOffsetY"
             },
             {
@@ -10246,7 +10780,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "LeftPadding"
             },
             {
@@ -10258,7 +10791,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "RightPadding"
             },
             {
@@ -10270,7 +10802,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "TopPadding"
             },
             {
@@ -10282,7 +10813,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "BottomPadding"
             },
             {
@@ -10292,7 +10822,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "HoveredFadeOutDuration"
             }
           ],
@@ -10303,7 +10832,6 @@
               "italic": false,
               "name": "Label",
               "smoothed": true,
-              "tags": "",
               "type": "TextObject::Text",
               "underlined": false,
               "variables": [],
@@ -10317,6 +10845,26 @@
                 "b": 0,
                 "g": 0,
                 "r": 0
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Text",
+                "font": "",
+                "textAlignment": "",
+                "characterSize": 20,
+                "color": "0;0;0"
               }
             },
             {
@@ -10326,7 +10874,6 @@
               "leftMargin": 0,
               "name": "Idle",
               "rightMargin": 0,
-              "tags": "",
               "texture": "",
               "tiled": false,
               "topMargin": 0,
@@ -10356,7 +10903,6 @@
               "leftMargin": 0,
               "name": "Hovered",
               "rightMargin": 0,
-              "tags": "",
               "texture": "",
               "tiled": false,
               "topMargin": 0,
@@ -10378,7 +10924,6 @@
               "leftMargin": 0,
               "name": "Pressed",
               "rightMargin": 0,
-              "tags": "",
               "texture": "",
               "tiled": false,
               "topMargin": 0,
@@ -10388,7 +10933,24 @@
               "effects": [],
               "behaviors": []
             }
-          ]
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              }
+            ]
+          }
         }
       ]
     },
@@ -11658,7 +12220,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "EnableAnimationChanges"
             },
             {
@@ -11668,7 +12229,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "EnableHorizontalFlipping"
             },
             {
@@ -11678,7 +12238,6 @@
               "description": "",
               "group": "Animation names",
               "extraInformation": [],
-              "hidden": false,
               "name": "IdleAnimationName"
             },
             {
@@ -11688,7 +12247,6 @@
               "description": "",
               "group": "Animation names",
               "extraInformation": [],
-              "hidden": false,
               "name": "RunAnimationName"
             },
             {
@@ -11698,7 +12256,6 @@
               "description": "",
               "group": "Animation names",
               "extraInformation": [],
-              "hidden": false,
               "name": "JumpAnimationName"
             },
             {
@@ -11708,7 +12265,6 @@
               "description": "",
               "group": "Animation names",
               "extraInformation": [],
-              "hidden": false,
               "name": "FallAnimationName"
             },
             {
@@ -11718,7 +12274,6 @@
               "description": "",
               "group": "Animation names",
               "extraInformation": [],
-              "hidden": false,
               "name": "ClimbAnimationName"
             },
             {
@@ -11730,7 +12285,6 @@
               "extraInformation": [
                 "PlatformBehavior::PlatformerObjectBehavior"
               ],
-              "hidden": false,
               "name": "PlatformerBehavior"
             },
             {
@@ -11742,7 +12296,6 @@
               "extraInformation": [
                 "AnimatableCapability::AnimatableBehavior"
               ],
-              "hidden": false,
               "name": "Animation"
             },
             {
@@ -11754,7 +12307,6 @@
               "extraInformation": [
                 "FlippableCapability::FlippableBehavior"
               ],
-              "hidden": false,
               "name": "Flippable"
             }
           ],
@@ -15507,7 +16059,6 @@
               "description": "",
               "group": "Dimension",
               "extraInformation": [],
-              "hidden": false,
               "name": "Width"
             },
             {
@@ -15518,7 +16069,6 @@
               "description": "",
               "group": "Dimension",
               "extraInformation": [],
-              "hidden": false,
               "name": "Height"
             },
             {
@@ -15528,7 +16078,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "Clockwise"
             },
             {
@@ -15539,7 +16088,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "HorizontalEdgeDuration"
             },
             {
@@ -15550,7 +16098,6 @@
               "description": "",
               "group": "Speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "VerticalEdgeDuration"
             },
             {
@@ -15644,7 +16191,6 @@
                 "easeFrom",
                 "easeTo"
               ],
-              "hidden": false,
               "name": "Easing"
             },
             {
@@ -15659,7 +16205,6 @@
                 "Bottom-right corner",
                 "Bottom-left corner"
               ],
-              "hidden": false,
               "name": "InitialPosition"
             },
             {
@@ -20203,7 +20748,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "LeftwardSpeed"
             },
             {
@@ -20213,7 +20757,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "RightwardSpeed"
             },
             {
@@ -20223,7 +20766,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "UpwardSpeed"
             },
             {
@@ -20233,7 +20775,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "DownwardSpeed"
             },
             {
@@ -20243,7 +20784,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "FollowOnX"
             },
             {
@@ -20253,7 +20793,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "FollowOnY"
             },
             {
@@ -20264,7 +20803,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "FollowFreeAreaLeft"
             },
             {
@@ -20275,7 +20813,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "FollowFreeAreaRight"
             },
             {
@@ -20286,7 +20823,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "FollowFreeAreaTop"
             },
             {
@@ -20297,7 +20833,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "FollowFreeAreaBottom"
             },
             {
@@ -20308,7 +20843,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "CameraOffsetX"
             },
             {
@@ -20319,7 +20853,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "CameraOffsetY"
             },
             {
@@ -20330,7 +20863,6 @@
               "description": "",
               "group": "Timing",
               "extraInformation": [],
-              "hidden": false,
               "name": "CameraDelay"
             },
             {
@@ -20341,7 +20873,6 @@
               "description": "",
               "group": "Timing",
               "extraInformation": [],
-              "hidden": false,
               "name": "ForecastTime"
             },
             {
@@ -20352,7 +20883,6 @@
               "description": "",
               "group": "Timing",
               "extraInformation": [],
-              "hidden": false,
               "name": "ForecastHistoryDuration"
             },
             {
@@ -20623,7 +21153,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "LeftwardSpeedMax"
             },
             {
@@ -20634,7 +21163,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "RightwardSpeedMax"
             },
             {
@@ -20645,7 +21173,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "UpwardSpeedMax"
             },
             {
@@ -20656,7 +21183,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "DownwardSpeedMax"
             },
             {
@@ -20923,7 +21449,6 @@
               "extraInformation": [
                 "PlatformBehavior::PlatformerObjectBehavior"
               ],
-              "hidden": false,
               "name": "PlatformerCharacter"
             },
             {
@@ -20935,7 +21460,6 @@
               "extraInformation": [
                 "SmoothCamera::SmoothCamera"
               ],
-              "hidden": false,
               "name": "SmoothCamera"
             },
             {
@@ -20956,7 +21480,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "AirFollowFreeAreaTop"
             },
             {
@@ -20967,7 +21490,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "AirFollowFreeAreaBottom"
             },
             {
@@ -20978,7 +21500,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "FloorFollowFreeAreaTop"
             },
             {
@@ -20989,7 +21510,6 @@
               "description": "",
               "group": "Position",
               "extraInformation": [],
-              "hidden": false,
               "name": "FloorFollowFreeAreaBottom"
             },
             {
@@ -20999,7 +21519,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "AirUpwardSpeed"
             },
             {
@@ -21009,7 +21528,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "AirDownwardSpeed"
             },
             {
@@ -21019,7 +21537,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "FloorUpwardSpeed"
             },
             {
@@ -21029,7 +21546,6 @@
               "description": "",
               "group": "Catch-up speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "FloorDownwardSpeed"
             },
             {
@@ -21040,7 +21556,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "AirUpwardSpeedMax"
             },
             {
@@ -21051,7 +21566,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "AirDownwardSpeedMax"
             },
             {
@@ -21062,7 +21576,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "FloorUpwardSpeedMax"
             },
             {
@@ -21073,7 +21586,6 @@
               "description": "",
               "group": "Maximum speed",
               "extraInformation": [],
-              "hidden": false,
               "name": "FloorDownwardSpeedMax"
             }
           ],
@@ -24259,7 +24771,6 @@
               "extraInformation": [
                 "PlatformBehavior::PlatformerObjectBehavior"
               ],
-              "hidden": false,
               "name": "PlatformerCharacter"
             },
             {
@@ -24269,7 +24780,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "GamepadIdentifier"
             },
             {
@@ -24279,7 +24789,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "UseArrows"
             },
             {
@@ -24289,7 +24798,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "UseLeftStick"
             },
             {
@@ -24299,7 +24807,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "UseRightStick"
             },
             {
@@ -24318,7 +24825,6 @@
                 "LT or L2",
                 "RT or R2"
               ],
-              "hidden": false,
               "name": "JumpButton"
             }
           ],
@@ -24918,7 +25424,6 @@
               "extraInformation": [
                 "TopDownMovementBehavior::TopDownMovementBehavior"
               ],
-              "hidden": false,
               "name": "TopDownMovement"
             },
             {
@@ -24928,7 +25433,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "GamepadIdentifier"
             },
             {
@@ -24938,7 +25442,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "UseArrows"
             },
             {
@@ -24948,7 +25451,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "UseLeftStick"
             },
             {
@@ -24958,7 +25460,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "UseRightStick"
             },
             {
@@ -24972,7 +25473,6 @@
                 "360°",
                 "8 Directions"
               ],
-              "hidden": false,
               "name": "StickMode"
             }
           ],
@@ -27400,7 +27900,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ControllerIdentifier"
             },
             {
@@ -27410,7 +27909,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "JoystickIdentifier"
             },
             {
@@ -27420,7 +27918,6 @@
               "description": "The deadzone is an area for which movement on sticks won't be taken into account (instead, the stick will be considered as not moved)",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "DeadZoneRadius"
             },
             {
@@ -27845,7 +28342,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ControllerIdentifier"
             },
             {
@@ -27855,7 +28351,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ButtonIdentifier"
             },
             {
@@ -28078,7 +28573,6 @@
               "extraInformation": [
                 "PlatformBehavior::PlatformerObjectBehavior"
               ],
-              "hidden": false,
               "name": "Property"
             },
             {
@@ -28088,7 +28582,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ControllerIdentifier"
             },
             {
@@ -28101,7 +28594,6 @@
                 "Primary",
                 "Secondary"
               ],
-              "hidden": false,
               "name": "JoystickIdentifier"
             },
             {
@@ -28111,7 +28603,6 @@
               "description": "",
               "group": "Controls",
               "extraInformation": [],
-              "hidden": false,
               "name": "JumpButton"
             }
           ],
@@ -28640,7 +29131,6 @@
               "extraInformation": [
                 "TopDownMovementBehavior::TopDownMovementBehavior"
               ],
-              "hidden": false,
               "name": "TopDownMovement"
             },
             {
@@ -28650,7 +29140,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ControllerIdentifier"
             },
             {
@@ -28663,7 +29152,6 @@
                 "Primary",
                 "Secondary"
               ],
-              "hidden": false,
               "name": "JoystickIdentifier"
             },
             {
@@ -28677,7 +29165,6 @@
                 "360°",
                 "8 Directions"
               ],
-              "hidden": false,
               "name": "StickMode"
             }
           ],
@@ -29581,7 +30068,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "ControllerIdentifier"
             },
             {
@@ -29594,7 +30080,6 @@
                 "Primary",
                 "Secondary"
               ],
-              "hidden": false,
               "name": "JoystickIdentifier"
             },
             {
@@ -29604,7 +30089,6 @@
               "description": "The deadzone is an area for which movement on sticks won't be taken into account (instead, the stick will be considered as not moved)",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "DeadZoneRadius"
             },
             {
@@ -29657,7 +30141,6 @@
               "adaptCollisionMaskAutomatically": false,
               "assetStoreId": "",
               "name": "Thumb",
-              "tags": "",
               "type": "Sprite",
               "updateIfNotVisible": false,
               "variables": [],
@@ -29681,7 +30164,6 @@
               "adaptCollisionMaskAutomatically": false,
               "assetStoreId": "",
               "name": "Border",
-              "tags": "",
               "type": "Sprite",
               "updateIfNotVisible": false,
               "variables": [],
@@ -29714,7 +30196,18 @@
                 }
               ]
             }
-          ]
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Thumb"
+              },
+              {
+                "objectName": "Border"
+              }
+            ]
+          }
         }
       ]
     },
@@ -34666,7 +35159,6 @@
               "extraInformation": [
                 "AnimatableCapability::AnimatableBehavior"
               ],
-              "hidden": false,
               "name": "Animation"
             }
           ],
