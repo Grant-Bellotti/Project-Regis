@@ -1707,11 +1707,11 @@
           "height": 50,
           "layer": "",
           "name": "Sword",
-          "persistentUuid": "d1b362a1-8c8c-4186-a963-d7162f9a4caf",
+          "persistentUuid": "58eb53d7-a092-4d36-8a2e-9d78fab24834",
           "width": 50,
-          "x": 270,
-          "y": 169,
-          "zOrder": 63,
+          "x": 256,
+          "y": -80,
+          "zOrder": 64,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6089,7 +6089,14 @@
           "name": "Sword",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "rotationAngle",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -6111,10 +6118,10 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
-                        "y": 0
+                        "y": 16
                       },
                       "customCollisionMask": [
                         [
@@ -6619,6 +6626,36 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Sword",
+                        "\"duration\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "PlatformBehavior::IsOnFloor"
                       },
                       "parameters": [
@@ -6646,136 +6683,135 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::And"
+                            "value": "VarObjet"
                           },
-                          "parameters": [],
-                          "subInstructions": [
+                          "parameters": [
+                            "Player",
+                            "direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
                             {
                               "type": {
-                                "value": "MouseButtonPressed"
+                                "value": "BuiltinCommonInstructions::And"
                               },
-                              "parameters": [
-                                "",
-                                "Left"
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CompareObjectTimer"
+                                  },
+                                  "parameters": [
+                                    "Sword",
+                                    "\"duration\"",
+                                    ">",
+                                    "1"
+                                  ]
+                                }
                               ]
                             },
                             {
                               "type": {
-                                "value": "VarObjet"
+                                "value": "BuiltinCommonInstructions::Once"
                               },
-                              "parameters": [
-                                "Player",
-                                "direction",
-                                "=",
-                                "1"
-                              ]
+                              "parameters": []
                             }
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Montre"
-                          },
-                          "parameters": [
-                            "Sword",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "=",
-                            "Player.X() + 65",
-                            "=",
-                            "Player.Y()"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipX"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "Flippable",
-                            "no"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "UnPauseObjectTimer"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "\"duration\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "\"duration\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::And"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
+                          ],
+                          "actions": [
                             {
                               "type": {
-                                "value": "CompareObjectTimer"
+                                "value": "Montre"
                               },
                               "parameters": [
                                 "Sword",
-                                "\"duration\"",
-                                "<",
-                                "0.5"
+                                ""
                               ]
                             },
                             {
                               "type": {
-                                "value": "VarObjet"
+                                "value": "MettreXY"
                               },
                               "parameters": [
-                                "Player",
-                                "direction",
+                                "Sword",
+                                "=",
+                                "Player.X() + 65",
+                                "=",
+                                "Player.Y()"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "Flippable",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "\"duration\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "rotationAngle",
                                 "=",
                                 "1"
                               ]
                             }
                           ]
-                        }
-                      ],
-                      "actions": [
+                        },
                         {
-                          "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "=",
-                            "Player.X() + 65",
-                            "=",
-                            "Player.Y()"
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "Sword"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "=",
+                                "Player.X() + 65",
+                                "=",
+                                "Player.Y()"
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -6797,138 +6833,243 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::And"
+                            "value": "VarObjet"
                           },
-                          "parameters": [],
-                          "subInstructions": [
+                          "parameters": [
+                            "Player",
+                            "direction",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
                             {
                               "type": {
-                                "value": "MouseButtonPressed"
+                                "value": "BuiltinCommonInstructions::And"
                               },
-                              "parameters": [
-                                "",
-                                "Left"
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CompareObjectTimer"
+                                  },
+                                  "parameters": [
+                                    "Sword",
+                                    "\"duration\"",
+                                    ">",
+                                    "1"
+                                  ]
+                                }
                               ]
                             },
                             {
                               "type": {
-                                "value": "VarObjet"
+                                "value": "BuiltinCommonInstructions::Once"
                               },
-                              "parameters": [
-                                "Player",
-                                "direction",
-                                "=",
-                                "0"
-                              ]
+                              "parameters": []
                             }
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Montre"
-                          },
-                          "parameters": [
-                            "Sword",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "=",
-                            "Player.X() - 45",
-                            "=",
-                            "Player.Y()"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipX"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "Flippable",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "UnPauseObjectTimer"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "\"duration\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Sword",
-                            "\"duration\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::And"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
+                          ],
+                          "actions": [
                             {
                               "type": {
-                                "value": "CompareObjectTimer"
+                                "value": "Montre"
                               },
                               "parameters": [
                                 "Sword",
-                                "\"duration\"",
-                                "<",
-                                "0.5"
+                                ""
                               ]
                             },
                             {
                               "type": {
-                                "value": "VarObjet"
+                                "value": "MettreXY"
                               },
                               "parameters": [
-                                "Player",
-                                "direction",
+                                "Sword",
+                                "=",
+                                "Player.X() + 10",
+                                "=",
+                                "Player.Y()"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "Flippable",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "\"duration\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "rotationAngle",
                                 "=",
                                 "0"
                               ]
                             }
                           ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "Sword"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "=",
+                                "Player.X() + 10",
+                                "=",
+                                "Player.Y()"
+                              ]
+                            }
+                          ]
                         }
-                      ],
-                      "actions": [
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Timings to keep rotating because i couldn't figure out how to statically change rotation"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
                         {
                           "type": {
-                            "value": "MettreXY"
+                            "value": "CompareObjectTimer"
                           },
                           "parameters": [
                             "Sword",
+                            "\"duration\"",
+                            "<",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "rotationAngle",
                             "=",
-                            "Player.X() - 45",
-                            "=",
-                            "Player.Y()"
+                            "1"
                           ]
                         }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Rotate"
+                      },
+                      "parameters": [
+                        "Sword",
+                        "360",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "\"duration\"",
+                            "<",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "rotationAngle",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Rotate"
+                      },
+                      "parameters": [
+                        "Sword",
+                        "-360",
+                        ""
                       ]
                     }
                   ]
@@ -6943,21 +7084,12 @@
                       "parameters": [
                         "Sword",
                         "\"duration\"",
-                        ">=",
-                        "0.5"
+                        ">",
+                        "0.4"
                       ]
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "PauseObjectTimer"
-                      },
-                      "parameters": [
-                        "Sword",
-                        "\"duration\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "Cache"
