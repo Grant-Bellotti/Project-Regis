@@ -918,6 +918,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Tiles/8cfe08fe2e8aed6067fdcdaa6d2a9caffe5926fcec066493794739bd6377f38d_Tile 1.png",
           "name": "Tile 1.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sword.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sword.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Pixel art RPG Items/Weapons/50a738319958d5049ce592a865b5684649ea0a967e152b323d1579559b224bfd_Sword.png",
+          "name": "Sword.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -955,7 +968,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6567637531652002,
+        "zoomFactor": 1.2332958501493732,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1686,6 +1699,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Sword",
+          "persistentUuid": "d1b362a1-8c8c-4186-a963-d7162f9a4caf",
+          "width": 50,
+          "x": 270,
+          "y": 169,
+          "zOrder": 63,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1706,6 +1735,12 @@
               "name": "speed",
               "type": "number",
               "value": 0
+            },
+            {
+              "folded": true,
+              "name": "direction",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -6049,15 +6084,64 @@
           ]
         },
         {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "NewTiledSprite",
-          "texture": "",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "9ac194a100fb1f24d54c0f218f3c38836f6a2766577309235412efc381676af6",
+          "name": "Sword",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": []
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sword.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6163,7 +6247,7 @@
             "objectName": "JumpButton"
           },
           {
-            "objectName": "NewTiledSprite"
+            "objectName": "Sword"
           }
         ]
       },
@@ -6190,304 +6274,708 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Movement",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "inverted": true,
+                        "value": "Visible"
                       },
                       "parameters": [
-                        "",
-                        "d"
+                        "Sword"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Right"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Right\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "direction",
+                            "=",
+                            "1"
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Right"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "a"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "a"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Left\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "direction",
+                            "=",
+                            "0"
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Space"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Jump\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Ladder\""
+                          ]
+                        }
                       ]
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Left\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
+                    },
                     {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Space"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "w"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Up"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Ladder\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Up\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "s"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Down"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Down\""
+                          ]
+                        }
                       ]
                     }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Jump\""
                   ]
                 },
                 {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Ladder\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
                         "value": "KeyPressed"
                       },
                       "parameters": [
                         "",
-                        "w"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Up"
+                        "LShift"
                       ]
                     }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Ladder\""
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "=",
+                        "500"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Up\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
+                        "inverted": true,
                         "value": "KeyPressed"
                       },
                       "parameters": [
                         "",
-                        "s"
+                        "LShift"
                       ]
-                    },
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "PlatformBehavior::MaxSpeed"
                       },
                       "parameters": [
-                        "",
-                        "Down"
+                        "Player",
+                        "PlatformerObject",
+                        "=",
+                        "200"
                       ]
                     }
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Down\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "LShift"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::MaxSpeed"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "=",
-                    "500"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "LShift"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::MaxSpeed"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "=",
-                    "200"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Note: Keyboard controls are provided by the Platformer behavior automatically"
+              "parameters": []
             },
             {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
+              "name": "Combat",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Facing Right"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "direction",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Sword",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "=",
+                            "Player.X() + 65",
+                            "=",
+                            "Player.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipX"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "Flippable",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "UnPauseObjectTimer"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "\"duration\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "\"duration\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "\"duration\"",
+                                "<",
+                                "0.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "direction",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "=",
+                            "Player.X() + 65",
+                            "=",
+                            "Player.Y()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Facing Left"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "direction",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Sword",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "=",
+                            "Player.X() - 45",
+                            "=",
+                            "Player.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipX"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "Flippable",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "UnPauseObjectTimer"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "\"duration\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "\"duration\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Sword",
+                                "\"duration\"",
+                                "<",
+                                "0.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "direction",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "=",
+                            "Player.X() - 45",
+                            "=",
+                            "Player.Y()"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Sword",
+                        "\"duration\"",
+                        ">=",
+                        "0.5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Sword",
+                        "\"duration\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Sword"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
               "name": "Mobile Touchscreen Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6618,7 +7106,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Sound and visual effects",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7053,6 +7540,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Fly enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7246,6 +7734,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Monster enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7433,6 +7922,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "End game logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7898,6 +8388,14 @@
                         "yes",
                         "30",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Sword"
                       ]
                     }
                   ]
