@@ -931,6 +931,66 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Pixel art RPG Items/Weapons/50a738319958d5049ce592a865b5684649ea0a967e152b323d1579559b224bfd_Sword.png",
           "name": "Sword.png"
         }
+      },
+      {
+        "file": "Dying.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dying.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Sword Swing.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Sword Swing.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Sword Swing 1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Sword Swing 1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Dying2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dying2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Dying (1).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dying (1).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Dying Character.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dying Character.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6293,7 +6353,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6661,7 +6720,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -6689,7 +6747,6 @@
                       "comment": "Facing Right"
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -6794,6 +6851,18 @@
                                 "rotationAngle",
                                 "=",
                                 "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "Sword Swing 1.mp3",
+                                "",
+                                "100",
+                                ""
                               ]
                             }
                           ]
@@ -7825,6 +7894,18 @@
                       "parameters": [
                         "",
                         "Player",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Dying Character.mp3",
+                        "",
+                        "200\n",
                         ""
                       ]
                     }
