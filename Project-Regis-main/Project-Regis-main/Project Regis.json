@@ -991,6 +991,51 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "new sprites/ladder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "new sprites\\ladder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "new sprites/coin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "new sprites\\coin.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "new sprites/flyingslime.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "new sprites\\flyingslime.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "new sprites/slime.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "new sprites\\slime.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "new sprites/spikyslime.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "new sprites\\spikyslime.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1028,7 +1073,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2332958501493732,
+        "zoomFactor": 0.39935884923921633,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3908,7 +3953,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\ladder.png",
+                      "image": "new sprites\\ladder.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3961,43 +4006,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Idle_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Idle_2.png",
+                      "image": "new sprites\\slime.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4045,331 +4054,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_9.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Monster_Fire_10.png",
+                      "image": "new sprites\\spikyslime.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4410,7 +4095,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Fly",
           "type": "Sprite",
@@ -4457,7 +4142,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_1.png",
+                      "image": "new sprites\\flyingslime.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4473,632 +4158,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 28,
-                            "y": 28
+                            "x": 8,
+                            "y": 6
                           },
                           {
-                            "x": 88,
-                            "y": 28
+                            "x": 106,
+                            "y": 6
                           },
                           {
-                            "x": 88,
-                            "y": 72
+                            "x": 106,
+                            "y": 76
                           },
                           {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_9.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_10.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_9.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Fly_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 28
-                          },
-                          {
-                            "x": 88,
-                            "y": 72
-                          },
-                          {
-                            "x": 28,
-                            "y": 72
+                            "x": 8,
+                            "y": 76
                           }
                         ]
                       ]
@@ -5129,7 +4202,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Coin.png",
+                      "image": "new sprites\\coin.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
