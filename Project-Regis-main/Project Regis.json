@@ -1036,6 +1036,42 @@
         "name": "new sprites\\spikyslime.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/flyingslime.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\flyingslime.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spikyslime.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\spikyslime.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/slime.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\slime.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/coin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\coin.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3953,7 +3989,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "new sprites\\ladder.png",
+                      "image": "assets\\ladder.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4006,7 +4042,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "new sprites\\slime.png",
+                      "image": "assets\\slime.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4019,26 +4055,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -4054,7 +4071,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "new sprites\\spikyslime.png",
+                      "image": "assets\\spikyslime.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4067,26 +4084,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 26,
-                            "y": 40
-                          },
-                          {
-                            "x": 64,
-                            "y": 40
-                          },
-                          {
-                            "x": 72,
-                            "y": 116
-                          },
-                          {
-                            "x": 16,
-                            "y": 116
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -4142,7 +4140,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "new sprites\\flyingslime.png",
+                      "image": "assets\\flyingslime.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4202,7 +4200,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "new sprites\\coin.png",
+                      "image": "assets\\coin.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
