@@ -1075,6 +1075,24 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Building/e4a97f52a3356edda45a153bd52a7917d2d2fe5509ccc0917e8306b67fb9673d_Alternative Small Castle.png",
           "name": "Alternative Small Castle.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "slime2-01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "slime2-01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spikyslime2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spikyslime2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2737,6 +2755,58 @@
                       }
                     ]
                   ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "slime2-01.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18.5,
+                        "y": 73
+                      },
+                      {
+                        "x": 26,
+                        "y": 40
+                      },
+                      {
+                        "x": 64,
+                        "y": 40
+                      },
+                      {
+                        "x": 74,
+                        "y": 74
+                      },
+                      {
+                        "x": 84,
+                        "y": 93.5
+                      },
+                      {
+                        "x": 84,
+                        "y": 114.5
+                      },
+                      {
+                        "x": 8,
+                        "y": 114
+                      },
+                      {
+                        "x": 8,
+                        "y": 94
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -2753,6 +2823,58 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Project-Regis-main\\new sprites\\spikyslime.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18.5,
+                        "y": 73
+                      },
+                      {
+                        "x": 26,
+                        "y": 40
+                      },
+                      {
+                        "x": 64,
+                        "y": 40
+                      },
+                      {
+                        "x": 74,
+                        "y": 74
+                      },
+                      {
+                        "x": 84,
+                        "y": 93.5
+                      },
+                      {
+                        "x": 84,
+                        "y": 114.5
+                      },
+                      {
+                        "x": 8,
+                        "y": 114
+                      },
+                      {
+                        "x": 8,
+                        "y": 94
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "spikyslime2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4703,7 +4825,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9150393103731463,
+        "zoomFactor": 0.6567637531652006,
         "windowMask": false
       },
       "objectsGroups": [
@@ -7097,7 +7219,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Fly enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7256,7 +7377,18 @@
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Fly",
+                        ">",
+                        "ForestBackground2.BoundingBoxBottom()"
+                      ]
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
@@ -8323,7 +8455,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3289678260987508,
+        "zoomFactor": 0.8054451666651843,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -8536,8 +8668,8 @@
           "name": "Monster",
           "persistentUuid": "04e6bf90-a027-452e-83f4-819a44aae057",
           "width": 0,
-          "x": 788,
-          "y": -65,
+          "x": 790,
+          "y": -58,
           "zOrder": 41,
           "numberProperties": [
             {
@@ -9259,8 +9391,8 @@
           "name": "Monster",
           "persistentUuid": "4e9d63b5-b0ea-4d79-ad4e-cda1275b4714",
           "width": 0,
-          "x": 3692,
-          "y": 147,
+          "x": 3691,
+          "y": 151,
           "zOrder": 41,
           "numberProperties": [],
           "stringProperties": [],
