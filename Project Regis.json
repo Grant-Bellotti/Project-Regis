@@ -1093,6 +1093,86 @@
         "name": "spikyslime2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "611766__sam300productions__sword-swings.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "611766__sam300productions__sword-swings.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "649726__duskbreaker__8bit-coin-collection-2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "649726__duskbreaker__8bit-coin-collection-2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Slime.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Slime.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Sword Swing (1).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Sword Swing (1).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Sword Swing (1)2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Sword Swing (1)2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Sword Swing (2).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Sword Swing (2).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Sword Swing (2)2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Sword Swing (2)2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Slime2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Slime2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4693,6 +4773,81 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "9ac194a100fb1f24d54c0f218f3c38836f6a2766577309235412efc381676af6",
+      "name": "Sword_in_ground",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "rotationAngle",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sword.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 12
+                      },
+                      {
+                        "x": 12,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 4
+                      },
+                      {
+                        "x": 4,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4739,6 +4894,9 @@
       },
       {
         "objectName": "Sword"
+      },
+      {
+        "objectName": "Sword_in_ground"
       },
       {
         "objectName": "LeftBoundary"
@@ -4825,7 +4983,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6567637531652006,
+        "zoomFactor": 0.6146148664417973,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4960,8 +5118,8 @@
           "name": "DoorParticles",
           "persistentUuid": "fb84a04d-cfeb-4e71-a07c-cd64c5b91f23",
           "width": 64.24380493164062,
-          "x": 2041.7562255859375,
-          "y": 234.75619506835938,
+          "x": 2331,
+          "y": 255,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -4990,7 +5148,7 @@
           "name": "Platform4",
           "persistentUuid": "dac6a253-9929-4369-b079-5ea42e96d4da",
           "width": 320,
-          "x": 1802,
+          "x": 2064,
           "y": 280,
           "zOrder": 3,
           "numberProperties": [],
@@ -5445,8 +5603,8 @@
           "name": "Portal",
           "persistentUuid": "7efbc01f-ebde-481a-8ed2-824eb6c891f2",
           "width": 0,
-          "x": 1845,
-          "y": -14,
+          "x": 2102,
+          "y": -13,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -5490,7 +5648,7 @@
           "name": "RightBoundary",
           "persistentUuid": "9562fd9d-6e93-4465-9013-efa2b833653b",
           "width": 160,
-          "x": 2112,
+          "x": 2375,
           "y": -256,
           "zOrder": 58,
           "numberProperties": [],
@@ -5500,13 +5658,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 128,
+          "depth": 1,
+          "height": 143,
           "layer": "",
           "name": "TopBoundary",
           "persistentUuid": "4381c067-2682-4f00-9a24-ff28fa12b1d8",
-          "width": 2272,
+          "width": 2531,
           "x": 0,
-          "y": -256,
+          "y": -263,
           "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
@@ -5515,13 +5674,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 128,
+          "depth": 1,
+          "height": 142,
           "layer": "",
           "name": "BottomBoundary",
           "persistentUuid": "00f86cf3-18b0-4d71-9ce8-952dfc4e6b5c",
-          "width": 2272,
-          "x": 0,
-          "y": 544,
+          "width": 2529,
+          "x": 3,
+          "y": 536,
           "zOrder": 60,
           "numberProperties": [],
           "stringProperties": [],
@@ -5581,10 +5741,41 @@
           "layer": "Background",
           "name": "ForestBackground2",
           "persistentUuid": "c95de862-73a1-47db-8ec4-07f4a7b2271d",
-          "width": 2273,
+          "width": 2534,
           "x": -2,
           "y": -256,
           "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 94,
+          "layer": "",
+          "name": "Platform3",
+          "persistentUuid": "b5a688a3-a47b-4ccf-ac8f-8972b06fa083",
+          "width": 222.99269104003906,
+          "x": 1792,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 314,
+          "customSize": true,
+          "depth": 1,
+          "height": 61,
+          "layer": "",
+          "name": "Sword_in_ground",
+          "persistentUuid": "563ee5a4-5f93-41e8-9534-0e2a3cbf3e6b",
+          "width": 64,
+          "x": 2146,
+          "y": 246,
+          "zOrder": 66,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5979,364 +6170,412 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "DepartScene"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Sword_in_ground",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "ResetObjectTimer"
+                        "value": "Cache"
                       },
                       "parameters": [
-                        "Sword",
-                        "\"duration\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsOnFloor"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject"
+                        "Sword_in_ground"
                       ]
                     }
                   ],
-                  "actions": [],
                   "events": [
                     {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Facing Right"
-                    },
-                    {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "VarObjet"
+                            "value": "DepartScene"
                           },
                           "parameters": [
-                            "Player",
-                            "direction",
-                            "=",
-                            "1"
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Sword",
+                            "\"duration\""
                           ]
                         }
                       ],
-                      "actions": [],
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
                               "type": {
-                                "value": "BuiltinCommonInstructions::And"
+                                "value": "PlatformBehavior::IsOnFloor"
                               },
-                              "parameters": [],
-                              "subInstructions": [
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Facing Right"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
                                 {
                                   "type": {
-                                    "value": "MouseButtonPressed"
+                                    "value": "VarObjet"
                                   },
                                   "parameters": [
-                                    "",
-                                    "Left"
+                                    "Player",
+                                    "direction",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::And"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonPressed"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Left"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "CompareObjectTimer"
+                                          },
+                                          "parameters": [
+                                            "Sword",
+                                            "\"duration\"",
+                                            ">",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "inverted": true,
+                                            "value": "Visible"
+                                          },
+                                          "parameters": [
+                                            "Sword_in_ground"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Montre"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "=",
+                                        "Player.X() + 65",
+                                        "=",
+                                        "Player.Y()"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "Flippable",
+                                        "no"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetObjectTimer"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "\"duration\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ModVarObjet"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "rotationAngle",
+                                        "=",
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PlaySound"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Sword Swing.mp3",
+                                        "",
+                                        "100",
+                                        ""
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
-                                  "type": {
-                                    "value": "CompareObjectTimer"
-                                  },
-                                  "parameters": [
-                                    "Sword",
-                                    "\"duration\"",
-                                    ">",
-                                    "1"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "Visible"
+                                      },
+                                      "parameters": [
+                                        "Sword"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "=",
+                                        "Player.X() + 65",
+                                        "=",
+                                        "Player.Y()"
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
                             },
                             {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Once"
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
                               },
-                              "parameters": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Montre"
-                              },
-                              "parameters": [
-                                "Sword",
-                                ""
-                              ]
+                              "comment": "Facing Left"
                             },
                             {
-                              "type": {
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "=",
-                                "Player.X() + 65",
-                                "=",
-                                "Player.Y()"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "FlippableCapability::FlippableBehavior::FlipX"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "Flippable",
-                                "no"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "\"duration\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "rotationAngle",
-                                "=",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "Sword Swing 1.mp3",
-                                "",
-                                "100",
-                                ""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "Visible"
-                              },
-                              "parameters": [
-                                "Sword"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "=",
-                                "Player.X() + 65",
-                                "=",
-                                "Player.Y()"
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Facing Left"
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Player",
-                            "direction",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
                                 {
                                   "type": {
-                                    "value": "MouseButtonPressed"
+                                    "value": "VarObjet"
                                   },
                                   "parameters": [
-                                    "",
-                                    "Left"
+                                    "Player",
+                                    "direction",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::And"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonPressed"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Left"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "CompareObjectTimer"
+                                          },
+                                          "parameters": [
+                                            "Sword",
+                                            "\"duration\"",
+                                            ">",
+                                            "1"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Montre"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "=",
+                                        "Player.X() + 10",
+                                        "=",
+                                        "Player.Y()"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "Flippable",
+                                        "yes"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetObjectTimer"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "\"duration\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ModVarObjet"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "rotationAngle",
+                                        "=",
+                                        "0"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PlaySound"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Sword Swing.mp3",
+                                        "",
+                                        "100",
+                                        ""
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
-                                  "type": {
-                                    "value": "CompareObjectTimer"
-                                  },
-                                  "parameters": [
-                                    "Sword",
-                                    "\"duration\"",
-                                    ">",
-                                    "1"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "Visible"
+                                      },
+                                      "parameters": [
+                                        "Sword"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "MettreXY"
+                                      },
+                                      "parameters": [
+                                        "Sword",
+                                        "=",
+                                        "Player.X() + 10",
+                                        "=",
+                                        "Player.Y()"
+                                      ]
+                                    }
                                   ]
                                 }
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Once"
-                              },
-                              "parameters": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Montre"
-                              },
-                              "parameters": [
-                                "Sword",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "=",
-                                "Player.X() + 10",
-                                "=",
-                                "Player.Y()"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "FlippableCapability::FlippableBehavior::FlipX"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "Flippable",
-                                "yes"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "\"duration\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "rotationAngle",
-                                "=",
-                                "0"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "Sword Swing 1.mp3",
-                                "",
-                                "100",
-                                ""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "Visible"
-                              },
-                              "parameters": [
-                                "Sword"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "Sword",
-                                "=",
-                                "Player.X() + 10",
-                                "=",
-                                "Player.Y()"
                               ]
                             }
                           ]
@@ -6563,6 +6802,18 @@
                         "+",
                         "50"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Slime2.mp3",
+                        "",
+                        "200",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -6630,6 +6881,18 @@
                         "Score",
                         "+",
                         "50"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Slime2.mp3",
+                        "",
+                        "200",
+                        ""
                       ]
                     }
                   ]
@@ -6763,7 +7026,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Player character",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7137,7 +7399,7 @@
                       },
                       "parameters": [
                         "",
-                        "coin.mp3",
+                        "649726__duskbreaker__8bit-coin-collection-2.wav",
                         "",
                         "50",
                         ""
@@ -7319,6 +7581,18 @@
                             "+",
                             "50"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "Slime2.mp3",
+                            "",
+                            "200",
+                            ""
+                          ]
                         }
                       ]
                     },
@@ -7344,6 +7618,18 @@
                           "parameters": [
                             "",
                             "Player",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "Dying Character.mp3",
+                            "",
+                            "200\n",
                             ""
                           ]
                         }
@@ -7412,7 +7698,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Monster enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7478,6 +7763,18 @@
                           "parameters": [
                             "",
                             "Player",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "Dying Character.mp3",
+                            "",
+                            "200\n",
                             ""
                           ]
                         }
@@ -7555,6 +7852,18 @@
                                 "+",
                                 "50"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "Slime.mp3",
+                                "",
+                                "",
+                                ""
+                              ]
                             }
                           ]
                         },
@@ -7580,6 +7889,18 @@
                               "parameters": [
                                 "",
                                 "Player",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "Dying Character.mp3",
+                                "",
+                                "200\n",
                                 ""
                               ]
                             }
@@ -8334,7 +8655,7 @@
           "isLocked": false,
           "name": "UI",
           "renderingType": "2d",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
@@ -10279,7 +10600,7 @@
                               },
                               "parameters": [
                                 "",
-                                "Sword Swing 1.mp3",
+                                "Sword Swing.mp3",
                                 "",
                                 "100",
                                 ""
@@ -10441,7 +10762,7 @@
                               },
                               "parameters": [
                                 "",
-                                "Sword Swing 1.mp3",
+                                "Sword Swing.mp3",
                                 "",
                                 "100",
                                 ""
@@ -10698,6 +11019,18 @@
                         "+",
                         "50"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Slime2.mp3",
+                        "",
+                        "200",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -10765,6 +11098,18 @@
                         "Score",
                         "+",
                         "50"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Slime2.mp3",
+                        "",
+                        "200",
+                        ""
                       ]
                     }
                   ]
@@ -11281,7 +11626,7 @@
                       },
                       "parameters": [
                         "",
-                        "coin.mp3",
+                        "649726__duskbreaker__8bit-coin-collection-2.wav",
                         "",
                         "50",
                         ""
@@ -11463,6 +11808,18 @@
                             "+",
                             "50"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "Slime2.mp3",
+                            "",
+                            "200",
+                            ""
+                          ]
                         }
                       ]
                     },
@@ -11488,6 +11845,18 @@
                           "parameters": [
                             "",
                             "Player",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "Dying Character.mp3",
+                            "",
+                            "200\n",
                             ""
                           ]
                         }
@@ -11556,7 +11925,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Monster enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11622,6 +11990,18 @@
                           "parameters": [
                             "",
                             "Player",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "Dying Character.mp3",
+                            "",
+                            "200\n",
                             ""
                           ]
                         }
@@ -11699,6 +12079,18 @@
                                 "+",
                                 "50"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "Slime2.mp3",
+                                "",
+                                "200",
+                                ""
+                              ]
                             }
                           ]
                         },
@@ -11726,6 +12118,18 @@
                                 "Player",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "Dying Character.mp3",
+                                "",
+                                "200\n",
+                                ""
+                              ]
                             }
                           ]
                         }
@@ -11744,7 +12148,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "End game logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12107,7 +12510,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Game environment",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
