@@ -1252,6 +1252,105 @@
         "name": "assets\\Platform LeftSide.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../new sprites/portal0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\new sprites\\portal0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../new sprites/portal1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"../../new sprites/portal1.png\",\"extension\":\".png\"}",
+        "name": "..\\..\\new sprites\\portal1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../new sprites/portal2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"../../new sprites/portal2.png\",\"extension\":\".png\"}",
+        "name": "..\\..\\new sprites\\portal2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../new sprites/portal3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"../../new sprites/portal3.png\",\"extension\":\".png\"}",
+        "name": "..\\..\\new sprites\\portal3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../new sprites/portal4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"../../new sprites/portal4.png\",\"extension\":\".png\"}",
+        "name": "..\\..\\new sprites\\portal4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../new sprites/portal5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"../../new sprites/portal5.png\",\"extension\":\".png\"}",
+        "name": "..\\..\\new sprites\\portal5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/portal2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal2.png\",\"extension\":\".png\"}",
+        "name": "assets\\portal2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/portal3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal3.png\",\"extension\":\".png\"}",
+        "name": "assets\\portal3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/portal4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal4.png\",\"extension\":\".png\"}",
+        "name": "assets\\portal4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/portal5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal5.png\",\"extension\":\".png\"}",
+        "name": "assets\\portal5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/portal1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal1.png\",\"extension\":\".png\"}",
+        "name": "assets\\portal1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3879,7 +3978,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Portal",
       "type": "Sprite",
@@ -3904,16 +4003,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "..\\..\\new sprites\\portal1",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Door.png",
+                  "image": "assets\\portal1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3930,19 +4030,163 @@
                     [
                       {
                         "x": 160,
-                        "y": 135
+                        "y": 100
                       },
                       {
-                        "x": 240,
-                        "y": 135
+                        "x": 256,
+                        "y": 100
                       },
                       {
-                        "x": 240,
-                        "y": 320
+                        "x": 256,
+                        "y": 308
                       },
                       {
                         "x": 160,
-                        "y": 320
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
                       }
                     ]
                   ]
@@ -4938,10 +5182,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -5006,10 +5250,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -5074,10 +5318,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -5275,7 +5519,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6146148664417973,
+        "zoomFactor": 0.3497446516335867,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6112,6 +6356,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Controlling the character",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7318,6 +7563,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Player character",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7773,6 +8019,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Fly enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7990,6 +8237,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Monster enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8213,7 +8461,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "End game logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8557,7 +8804,7 @@
                           },
                           "parameters": [
                             "",
-                            "CurrentSceneName()",
+                            "\"Level 2\"",
                             ""
                           ]
                         }
@@ -8576,6 +8823,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Game environment",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9068,7 +9316,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8054451666651843,
+        "zoomFactor": 0.6601120098331866,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -9147,21 +9395,6 @@
           "x": 5974,
           "y": 272,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 160,
-          "layer": "UI",
-          "name": "JumpButton",
-          "persistentUuid": "197296d8-a662-4414-adda-666e3ad2c16d",
-          "width": 160,
-          "x": 811,
-          "y": 428,
-          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13341,7 +13574,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4289215686274547,
+        "zoomFactor": 0.2209615633003596,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -13374,21 +13607,6 @@
           "x": 9,
           "y": 8,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 160,
-          "layer": "UI",
-          "name": "JumpButton",
-          "persistentUuid": "197296d8-a662-4414-adda-666e3ad2c16d",
-          "width": 160,
-          "x": 811,
-          "y": 428,
-          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13807,7 +14025,7 @@
           "persistentUuid": "33ab00b5-f24e-476d-b69b-12b0c661f292",
           "width": 1689,
           "x": -7,
-          "y": -1288,
+          "y": -1252,
           "zOrder": 75,
           "numberProperties": [],
           "stringProperties": [],
