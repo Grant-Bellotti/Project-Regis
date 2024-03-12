@@ -1351,6 +1351,15 @@
         "name": "assets\\portal1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PARTH.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PARTH.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3630,7 +3639,7 @@
     },
     {
       "assetStoreId": "a48315b9a9c655af87118d7bb8f6be03b4dbb14e066387849b2d2d4c3600573c",
-      "name": "RetryButton",
+      "name": "NextLevel2",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -3669,7 +3678,7 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "Retry",
+          "string": "Next Level",
           "font": "CantoraOne-Regular.ttf",
           "textAlignment": "center",
           "characterSize": 40,
@@ -3692,7 +3701,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Retry",
+            "text": "Next Level",
             "font": "CantoraOne-Regular.ttf",
             "textAlignment": "center",
             "characterSize": 40,
@@ -5375,6 +5384,226 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Portallvl2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "AdvancedBloom",
+          "name": "Effect",
+          "doubleParameters": {
+            "bloomScale": 0.7,
+            "blur": 4,
+            "brightness": 0.7,
+            "padding": 0,
+            "quality": 7,
+            "threshold": 0.5
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "..\\..\\new sprites\\portal1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\portal5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 160,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 100
+                      },
+                      {
+                        "x": 256,
+                        "y": 308
+                      },
+                      {
+                        "x": 160,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -5414,7 +5643,7 @@
         "objectName": "EndScreenRetryText"
       },
       {
-        "objectName": "RetryButton"
+        "objectName": "NextLevel2"
       },
       {
         "objectName": "EndScreenBackground"
@@ -5439,6 +5668,9 @@
       },
       {
         "objectName": "Portal"
+      },
+      {
+        "objectName": "Portallvl2"
       },
       {
         "objectName": "MonsterParticles"
@@ -5573,7 +5805,7 @@
               "name": "EndScreenRetryText"
             },
             {
-              "name": "RetryButton"
+              "name": "NextLevel2"
             }
           ]
         },
@@ -6228,7 +6460,7 @@
           "customSize": false,
           "height": 0,
           "layer": "EndScreen",
-          "name": "RetryButton",
+          "name": "NextLevel2",
           "persistentUuid": "28e490c3-6951-4014-93c6-35648cb3160c",
           "width": 0,
           "x": 384,
@@ -8792,7 +9024,7 @@
                             "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                           },
                           "parameters": [
-                            "RetryButton",
+                            "NextLevel2",
                             ""
                           ]
                         }
@@ -9316,7 +9548,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6601120098331866,
+        "zoomFactor": 0.4583360322149762,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -9882,7 +10114,7 @@
           "customSize": false,
           "height": 0,
           "layer": "EndScreen",
-          "name": "RetryButton",
+          "name": "NextLevel2",
           "persistentUuid": "69c0ac29-2d55-4f4b-ab3c-367401ca9f7b",
           "width": 0,
           "x": 373,
@@ -10610,6 +10842,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Controlling the character",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11778,6 +12011,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Player character",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12233,6 +12467,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Fly enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12450,6 +12685,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "Monster enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12673,6 +12909,7 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
+          "folded": true,
           "name": "End game logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12891,53 +13128,13 @@
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "Score",
-                                "<",
-                                "950"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Cache"
-                              },
-                              "parameters": [
-                                "EndScreenBestText"
-                              ]
-                            }
-                          ]
+                          "conditions": [],
+                          "actions": []
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "Score",
-                                ">=",
-                                "950"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Cache"
-                              },
-                              "parameters": [
-                                "EndScreenChallengeText"
-                              ]
-                            }
-                          ]
+                          "conditions": [],
+                          "actions": []
                         }
                       ]
                     },
@@ -13004,7 +13201,7 @@
                             "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                           },
                           "parameters": [
-                            "RetryButton",
+                            "NextLevel2",
                             ""
                           ]
                         }
@@ -13016,7 +13213,7 @@
                           },
                           "parameters": [
                             "",
-                            "CurrentSceneName()",
+                            "\"Level 3\"",
                             ""
                           ]
                         }
@@ -13574,7 +13771,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2209615633003596,
+        "zoomFactor": 0.2880986309850082,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -13786,7 +13983,7 @@
           "customSize": false,
           "height": 0,
           "layer": "EndScreen",
-          "name": "RetryButton",
+          "name": "NextLevel2",
           "persistentUuid": "69c0ac29-2d55-4f4b-ab3c-367401ca9f7b",
           "width": 0,
           "x": 373,
@@ -14019,22 +14216,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 131,
-          "layer": "",
-          "name": "TopBoundary",
-          "persistentUuid": "33ab00b5-f24e-476d-b69b-12b0c661f292",
-          "width": 1689,
-          "x": -7,
-          "y": -1252,
-          "zOrder": 75,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 104,
           "layer": "",
           "name": "PlatformRightSide",
@@ -14173,16 +14354,138 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Fly",
+          "persistentUuid": "c19d6971-6445-4508-baf3-c2c49c005023",
+          "width": 0,
+          "x": 326,
+          "y": -665,
+          "zOrder": 78,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Monster",
+          "persistentUuid": "7d2c988f-f853-4b31-93d3-d4e2dc4b5e18",
+          "width": 0,
+          "x": 1315,
+          "y": -997,
+          "zOrder": 79,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "cc035d7b-b7cf-4ff6-906e-6b0dfca27c21",
+          "width": 0,
+          "x": 1327,
+          "y": -959,
+          "zOrder": 80,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Monster",
+          "persistentUuid": "9756c356-1c98-4a40-a944-4af94ea06de7",
+          "width": 0,
+          "x": 1314,
+          "y": -1076,
+          "zOrder": 81,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 128,
+          "height": 1676,
           "layer": "",
           "name": "TilesetPiece12",
-          "persistentUuid": "fa1986c0-7ef9-4c0a-aba4-c7f7428942ec",
-          "width": 1691,
-          "x": -8,
-          "y": -1252,
-          "zOrder": 78,
+          "persistentUuid": "6e023fa1-ac28-4b4d-89c5-5a34bfe89617",
+          "width": 153,
+          "x": 1533,
+          "y": -2533,
+          "zOrder": 68,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "200039af-25e3-4f85-94a3-1aa8c51ba7bf",
+          "width": 0,
+          "x": 1327,
+          "y": -1033,
+          "zOrder": 82,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Monster",
+          "persistentUuid": "bc00174d-2fa6-497d-a1c8-9723b3febc42",
+          "width": 0,
+          "x": 1314,
+          "y": -1148,
+          "zOrder": 83,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1676,
+          "layer": "",
+          "name": "TilesetPiece12",
+          "persistentUuid": "21052d9c-aa4b-4508-9788-84cd72e17f83",
+          "width": 153,
+          "x": -19,
+          "y": -2834,
+          "zOrder": 68,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 2600,
+          "layer": "Background",
+          "name": "PARTH",
+          "persistentUuid": "d6a53ec6-f518-47d6-9815-e5b260a79940",
+          "width": 3471,
+          "x": -2,
+          "y": -1987,
+          "zOrder": 84,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14270,6 +14573,17 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "f1097c97406cdef1c66525f1272d278f6b7697dc878e56b89dd6d261de24e615",
+          "height": 128,
+          "name": "PARTH",
+          "texture": "assets\\PARTH.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 128,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -14277,6 +14591,9 @@
         "children": [
           {
             "objectName": "CastlesBackground"
+          },
+          {
+            "objectName": "PARTH"
           },
           {
             "objectName": "AlternativeSmallCastle"
@@ -16686,7 +17003,7 @@
                             "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                           },
                           "parameters": [
-                            "RetryButton",
+                            "NextLevel2",
                             ""
                           ]
                         }
@@ -16851,7 +17168,7 @@
                         "value": "ResizableCapability::ResizableBehavior::SetWidth"
                       },
                       "parameters": [
-                        "CastlesBackground",
+                        "PARTH",
                         "Resizable",
                         "=",
                         "CameraWidth()"
@@ -16862,7 +17179,7 @@
                         "value": "TiledSpriteObject::XOffset"
                       },
                       "parameters": [
-                        "CastlesBackground",
+                        "PARTH",
                         "=",
                         "CameraBorderLeft() / 3 + 780"
                       ]
