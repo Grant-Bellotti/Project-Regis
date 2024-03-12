@@ -5837,7 +5837,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3497446516335867,
+        "zoomFactor": 0.6567637531652011,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6633,6 +6633,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "controls",
+          "persistentUuid": "e08f818a-3f6b-452b-ae12-6137895a1dca",
+          "width": 0,
+          "x": 140,
+          "y": 70,
+          "zOrder": 68,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6646,6 +6661,47 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "controls",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "W, A, S, D or arrow keys to move! \nSpace to jump!",
+          "font": "PTSans-Bold.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "W, A, S, D or arrow keys to move! \nSpace to jump!",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -6653,6 +6709,9 @@
         "children": [
           {
             "objectName": "ForestBackground2"
+          },
+          {
+            "objectName": "controls"
           }
         ]
       },
@@ -8004,7 +8063,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Use checkpoints to save progress",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9137,7 +9195,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Game environment",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9214,7 +9271,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Background",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9854,21 +9910,6 @@
               "value": 0
             }
           ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Fly",
-          "persistentUuid": "689b9e99-d5d2-4ced-8116-a5601af41be6",
-          "width": 0,
-          "x": 1807,
-          "y": 156,
-          "zOrder": 5,
-          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -10849,6 +10890,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "controls",
+          "persistentUuid": "8d507d60-ff1f-4c67-a688-7b91bc053700",
+          "width": 0,
+          "x": 157,
+          "y": 59,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Fly",
+          "persistentUuid": "ec5fa536-b88a-4884-8866-bd4afe904470",
+          "width": 0,
+          "x": 1772,
+          "y": 147,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -10922,6 +10993,47 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "controls",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Left Click to use sword!",
+          "font": "PTSans-Bold.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Left Click to use sword!",
+            "font": "PTSans-Bold.ttf",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -10932,6 +11044,9 @@
           },
           {
             "objectName": "AlternativeSmallCastle"
+          },
+          {
+            "objectName": "controls"
           }
         ]
       },
