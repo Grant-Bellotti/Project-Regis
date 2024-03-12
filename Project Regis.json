@@ -17120,7 +17120,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Game environment",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17218,7 +17217,7 @@
                       },
                       "parameters": [
                         "",
-                        "crickets.aac",
+                        "",
                         "yes",
                         "30",
                         "1"
