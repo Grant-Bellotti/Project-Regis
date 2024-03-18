@@ -23302,7 +23302,7 @@
           "name": "Credit",
           "persistentUuid": "bad73f44-cac4-46f3-800a-e024d7a8adbf",
           "width": 0,
-          "x": 389,
+          "x": 337,
           "y": 2,
           "zOrder": 1,
           "numberProperties": [],
@@ -23318,8 +23318,8 @@
           "name": "Sound_Credit",
           "persistentUuid": "bb99ec97-2caf-4325-901c-de992cea9c1a",
           "width": 447,
-          "x": 504,
-          "y": 89,
+          "x": 447,
+          "y": 88,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -23337,6 +23337,22 @@
           "x": 17,
           "y": 91,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 546,
+          "layer": "",
+          "name": "CastlesBackground",
+          "persistentUuid": "faa415a8-bbe1-4566-ae6c-ae05fe9cd8e2",
+          "width": 963,
+          "x": -1,
+          "y": -1,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23359,9 +23375,9 @@
           "textAlignment": "center",
           "characterSize": 55,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": true,
@@ -23381,7 +23397,7 @@
             "font": "",
             "textAlignment": "center",
             "characterSize": 55,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         {
@@ -23400,9 +23416,9 @@
           "textAlignment": "left",
           "characterSize": 14,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -23422,7 +23438,7 @@
             "font": "",
             "textAlignment": "left",
             "characterSize": 14,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         {
@@ -23441,9 +23457,9 @@
           "textAlignment": "left",
           "characterSize": 20,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -23463,8 +23479,19 @@
             "font": "",
             "textAlignment": "left",
             "characterSize": 20,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "f1097c97406cdef1c66525f1272d278f6b7697dc878e56b89dd6d261de24e615",
+          "height": 128,
+          "name": "CastlesBackground",
+          "texture": "tiled_Castles Background.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 128,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -23472,6 +23499,9 @@
         "children": [
           {
             "objectName": "Credit"
+          },
+          {
+            "objectName": "CastlesBackground"
           },
           {
             "objectName": "Sound_Credit"
