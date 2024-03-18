@@ -1535,6 +1535,141 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerright1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerright1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerclimb1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerclimb1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerleft0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerleft0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerclimb0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerclimb0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerleft1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerleft1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerright0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerright0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerright2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerright2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerright02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerright02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerclimb2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerclimb2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerright03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerright03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerclimb3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerclimb3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerclimb02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerclimb02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playerright04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playerright04.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "angryslime1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "angryslime1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "angryslime0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "angryslime0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1687,11 +1822,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Idle_1.png",
+                  "image": "playerright0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1707,128 +1842,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
@@ -1843,11 +1870,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.03999999910593033,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_1.png",
+                  "image": "playerright02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1863,27 +1890,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_2.png",
+                  "image": "playerright2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1899,632 +1926,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_7.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_8.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_9.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_10.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_11.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_12.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_13.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_14.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_15.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_16.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_17.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_18.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Run_19.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
@@ -2539,11 +1954,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Jump.png",
+                  "image": "playerright03.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2559,20 +1974,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
@@ -2587,11 +2002,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.03999999910593033,
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_1.png",
+                  "image": "playerclimb3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2607,27 +2022,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_2.png",
+                  "image": "playerclimb02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2643,380 +2058,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_7.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_8.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_9.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_10.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_11.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Climb_12.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 22
-                      },
-                      {
-                        "x": 124.5,
-                        "y": 182
-                      },
-                      {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
@@ -3031,11 +2086,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Red hero_Fall.png",
+                  "image": "playerright04.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3051,20 +2106,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20.5,
-                        "y": 22
+                        "x": 35,
+                        "y": 65
                       },
                       {
-                        "x": 124.5,
-                        "y": 22
+                        "x": 121.5,
+                        "y": 66
                       },
                       {
-                        "x": 124.5,
-                        "y": 182
+                        "x": 115,
+                        "y": 192
                       },
                       {
-                        "x": 20.5,
-                        "y": 182
+                        "x": 47.5,
+                        "y": 192
                       }
                     ]
                   ]
@@ -6604,21 +5659,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 49,
-          "layer": "",
-          "name": "Checkpoint",
-          "persistentUuid": "8ea01fcc-2da7-4eb2-966c-1b50c561bf00",
-          "width": 75.38461303710938,
-          "x": 1512,
-          "y": 186,
-          "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 35,
           "layer": "",
@@ -6925,21 +5965,6 @@
         {
           "angle": 0,
           "customSize": false,
-          "height": 49,
-          "layer": "",
-          "name": "Checkpoint",
-          "persistentUuid": "8139f892-065e-4b90-b332-09bf661fc701",
-          "width": 75.38461303710938,
-          "x": 434,
-          "y": 325,
-          "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
           "height": 94,
           "layer": "",
           "name": "Platform3",
@@ -6975,8 +6000,8 @@
           "name": "Checkpoint",
           "persistentUuid": "ea983069-cccc-4be5-b905-c52b67ea8508",
           "width": 75.38461303710938,
-          "x": 1081,
-          "y": 277,
+          "x": 1083,
+          "y": 238,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -7207,7 +6232,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "W, A, S, D or arrow keys to move! \nSpace to jump!",
+          "string": "W, A, S, D or arrow keys to move! \nSpace to jump!\nShift to sprint!",
           "font": "PTSans-Bold.ttf",
           "textAlignment": "left",
           "characterSize": 20,
@@ -7230,7 +6255,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "W, A, S, D or arrow keys to move! \nSpace to jump!",
+            "text": "W, A, S, D or arrow keys to move! \nSpace to jump!\nShift to sprint!",
             "font": "PTSans-Bold.ttf",
             "textAlignment": "left",
             "characterSize": 20,
@@ -10305,22 +9330,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 96,
-          "layer": "",
-          "name": "Player",
-          "persistentUuid": "dd0e3a5a-143f-4673-86bd-c3b6fa91657b",
-          "width": 72,
-          "x": 216,
-          "y": 143,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 227,
           "layer": "",
@@ -11482,6 +10491,22 @@
           "x": 333,
           "y": 331,
           "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 96,
+          "layer": "",
+          "name": "Player",
+          "persistentUuid": "5dda1f7c-5240-4556-8844-0be50f7d8d8b",
+          "width": 72,
+          "x": 225,
+          "y": 163,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15802,22 +14827,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 96,
-          "layer": "",
-          "name": "Player",
-          "persistentUuid": "1e069464-cf7f-4756-9d47-d410d2521eb7",
-          "width": 72,
-          "x": 174,
-          "y": 148,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 1,
           "height": 127,
           "layer": "",
@@ -15918,6 +14927,22 @@
           "x": -345,
           "y": -4093,
           "zOrder": 108,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 96,
+          "layer": "",
+          "name": "Player",
+          "persistentUuid": "cae09b46-9c6d-4577-87ed-b648ca7aa542",
+          "width": 72,
+          "x": 227,
+          "y": 143,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19701,7 +18726,7 @@
       ],
       "objects": [
         {
-          "adaptCollisionMaskAutomatically": false,
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "boss",
           "type": "Sprite",
@@ -19733,7 +18758,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Project-Regis-main\\new sprites\\slime.png",
+                      "image": "angryslime0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -19749,24 +18774,12 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 70.5
-                          },
-                          {
-                            "x": 36,
-                            "y": 64.5
-                          },
-                          {
-                            "x": 56,
+                            "x": 8,
                             "y": 64
                           },
                           {
-                            "x": 71.5,
-                            "y": 71
-                          },
-                          {
                             "x": 84,
-                            "y": 93.5
+                            "y": 64
                           },
                           {
                             "x": 84,
@@ -19775,17 +18788,13 @@
                           {
                             "x": 8,
                             "y": 114
-                          },
-                          {
-                            "x": 8.5,
-                            "y": 91
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "slime2-01.png",
+                      "image": "angryslime1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -19801,24 +18810,12 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 70.5
-                          },
-                          {
-                            "x": 36,
-                            "y": 64.5
-                          },
-                          {
-                            "x": 56,
+                            "x": 8,
                             "y": 64
                           },
                           {
-                            "x": 71.5,
-                            "y": 71
-                          },
-                          {
                             "x": 84,
-                            "y": 93.5
+                            "y": 64
                           },
                           {
                             "x": 84,
@@ -19827,10 +18824,6 @@
                           {
                             "x": 8,
                             "y": 114
-                          },
-                          {
-                            "x": 8.5,
-                            "y": 91
                           }
                         ]
                       ]
@@ -23872,7 +22865,7 @@
                       },
                       "parameters": [
                         "",
-                        "",
+                        "Scary Music.mp3",
                         "yes",
                         "30",
                         "1"
@@ -24295,7 +23288,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.578103240626983,
+        "zoomFactor": 1.2395833333333328,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -24318,15 +23311,32 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 371,
           "layer": "",
           "name": "Sound_Credit",
           "persistentUuid": "bb99ec97-2caf-4325-901c-de992cea9c1a",
-          "width": 0,
-          "x": 6,
-          "y": 68,
+          "width": 447,
+          "x": 504,
+          "y": 89,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 446,
+          "layer": "",
+          "name": "Credits",
+          "persistentUuid": "edc98261-4292-44ff-bd77-220b9b0f7830",
+          "width": 564,
+          "x": 17,
+          "y": 91,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -24388,7 +23398,7 @@
           "string": "Music Level 1 and 2:\nAltweibersommer: A Mellow and Ambient Soundscape by kjartan_abel -- https://freesound.org/s/540908/ -- License: Attribution 4.0\n\nCoin:\n8Bit Coin Collection #2 by Duskbreaker -- https://freesound.org/s/649726/ -- License: Creative Commons 0\n\nSlime Death:\nVocal_Splat_10.wav by benhillyard -- https://freesound.org/s/47982/ -- License: Attribution NonCommercial 3.0\n\nSword Swing:\nSword Swings.mp3 by Sam300Productions -- https://freesound.org/s/611766/ -- License: Creative Commons 0\n\nSword Pick up Sound:\nItem Pickup by TreasureSounds -- https://freesound.org/s/332629/ -- License: Attribution 4.0\n\nMusic level 3:\nSad or Scary Scene Change Music.mp3 by dominictreis -- https://freesound.org/s/488963/ -- License: Creative Commons 0",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 10,
+          "characterSize": 14,
           "color": {
             "b": 255,
             "g": 255,
@@ -24411,7 +23421,48 @@
             "text": "Music Level 1 and 2:\nAltweibersommer: A Mellow and Ambient Soundscape by kjartan_abel -- https://freesound.org/s/540908/ -- License: Attribution 4.0\n\nCoin:\n8Bit Coin Collection #2 by Duskbreaker -- https://freesound.org/s/649726/ -- License: Creative Commons 0\n\nSlime Death:\nVocal_Splat_10.wav by benhillyard -- https://freesound.org/s/47982/ -- License: Attribution NonCommercial 3.0\n\nSword Swing:\nSword Swings.mp3 by Sam300Productions -- https://freesound.org/s/611766/ -- License: Creative Commons 0\n\nSword Pick up Sound:\nItem Pickup by TreasureSounds -- https://freesound.org/s/332629/ -- License: Attribution 4.0\n\nMusic level 3:\nSad or Scary Scene Change Music.mp3 by dominictreis -- https://freesound.org/s/488963/ -- License: Creative Commons 0",
             "font": "",
             "textAlignment": "left",
-            "characterSize": 10,
+            "characterSize": 14,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Credits",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Levels:\n - Level 1: Tyler Wu\n - Level 2: Grant Bellotti\n - Level 3: Tyler Wu, Collin Seago\n - Boss Level: Grant Bellotti\n\nArtwork: Collin Seago (mainly), Grant Bellotti\n\nSound Design: Tyler Wu\n\nMechanics: Grant Bellotti",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Levels:\n - Level 1: Tyler Wu\n - Level 2: Grant Bellotti\n - Level 3: Tyler Wu, Collin Seago\n - Boss Level: Grant Bellotti\n\nArtwork: Collin Seago (mainly), Grant Bellotti\n\nSound Design: Tyler Wu\n\nMechanics: Grant Bellotti",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
             "color": "255;255;255"
           }
         }
@@ -24424,6 +23475,9 @@
           },
           {
             "objectName": "Sound_Credit"
+          },
+          {
+            "objectName": "Credits"
           }
         ]
       },
