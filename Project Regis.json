@@ -13130,18 +13130,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "crickets.aac",
-                        "yes",
-                        "30",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Cache"
                       },
                       "parameters": [
@@ -17558,18 +17546,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Scary Music.mp3",
-                        "yes",
-                        "35",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Cache"
                       },
                       "parameters": [
@@ -17778,8 +17754,30 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Scary Music.mp3",
+                "yes",
+                "35",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -23333,9 +23331,9 @@
           "layer": "",
           "name": "Credits",
           "persistentUuid": "edc98261-4292-44ff-bd77-220b9b0f7830",
-          "width": 564,
-          "x": 17,
-          "y": 91,
+          "width": 426,
+          "x": 14,
+          "y": 78,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -23452,7 +23450,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Levels:\n - Level 1: Tyler Wu\n - Level 2: Grant Bellotti\n - Level 3: Tyler Wu, Collin Seago\n - Boss Level: Grant Bellotti\n\nArtwork: Collin Seago (mainly), Grant Bellotti\n\nSound Design: Tyler Wu\n\nMechanics: Grant Bellotti",
+          "string": "Levels:\n - Level 1: Tyler Wu\n - Level 2: Grant Bellotti\n - Level 3: Tyler Wu, Collin Seago\n - Boss Level: Grant Bellotti\n\nArtwork: \n - Enemies: Collin Seago\n - Flying Slime: Grant Bellotti\n - Background and platforms: Gdevelop Asset Store\n - Ladder: Collin Seago\n - Portal: Collin Seago\n - Sword: Gdevelop Asset Store\n\nSound Design: Tyler Wu\n\nMechanics: Grant Bellotti",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -23475,7 +23473,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Levels:\n - Level 1: Tyler Wu\n - Level 2: Grant Bellotti\n - Level 3: Tyler Wu, Collin Seago\n - Boss Level: Grant Bellotti\n\nArtwork: Collin Seago (mainly), Grant Bellotti\n\nSound Design: Tyler Wu\n\nMechanics: Grant Bellotti",
+            "text": "Levels:\n - Level 1: Tyler Wu\n - Level 2: Grant Bellotti\n - Level 3: Tyler Wu, Collin Seago\n - Boss Level: Grant Bellotti\n\nArtwork: \n - Enemies: Collin Seago\n - Flying Slime: Grant Bellotti\n - Background and platforms: Gdevelop Asset Store\n - Ladder: Collin Seago\n - Portal: Collin Seago\n - Sword: Gdevelop Asset Store\n\nSound Design: Tyler Wu\n\nMechanics: Grant Bellotti",
             "font": "",
             "textAlignment": "left",
             "characterSize": 20,
